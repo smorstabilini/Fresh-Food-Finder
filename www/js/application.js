@@ -400,7 +400,7 @@ function getDirections( index ) {
         else 
         */
         if (android) {
-            navigator.app.loadUrl( 'http://maps.google.com/maps?q=' + market.y + ',' + market.x);
+            navigator.app.loadUrl( 'http://maps.google.com/maps?q=' + market.y + ',' + market.x, { openExternal:true});
         }
         else {
             window.open( ('http://maps.google.com/maps?q=' + market.y + ',' + market.x), '_blank' );
